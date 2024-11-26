@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Media Downloader</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://www.transparenttextures.com/patterns/coffee-wall.png');
+            background-size: cover;
+            color: #333;
+        }
+
+        /* Container */
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            color: #3b5998;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        pre {
+            font-size: 18px;
+            color: #3b5998;
+            white-space: pre-wrap; 
+            word-wrap: break-word;
+            margin: 20px 0;
+        }
+
+        /* Form Styles */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            padding: 15px;
+            font-size: 16px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 350px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+
+        input[type="text"]:focus {
+            border-color: #3b5998;
+            outline: none;
+            box-shadow: 0 0 5px rgba(59, 89, 152, 0.5);
+        }
+
+        button {
+            padding: 15px;
+            background-color: #3b5998;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 350px;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            background-color: #365899;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(1);
+        }
+
+        /* Media Section Styles */
+        .media-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .media-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .media-container video {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .media-container a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #3b5998;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .media-container a:hover {
+            background-color: #365899;
+        }
+
+        /* Footer Styles */
+        footer {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        footer a {
+            color: #3b5998;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo Display (ASCII art) -->
+        <pre>
+-----------.        .-----------
+  ------    \  __  /    ------
+    -----    \(  )/    -----
+       ---   ' \/ `   ---
+         --- :    : ---
+           --`    '--
+           `/`/..\`\`
+        ====UU====UU====
+            '//||\\`
+              ''``
+        </pre>
+
+        <h1>Instagram Media Downloader</h1>
+
+        <!-- Form for Instagram URL -->
+        <form action="/download" method="POST">
+            <input type="text" name="instagramUrl" placeholder="Enter Instagram Post URL" required>
+            <button type="submit">📥 Download Media 🦄</button>
+        </form>
+
+        <!-- Media container will be dynamically filled with images or videos -->
+        <div class="media-container" id="media-container">
+            <!-- Media content will appear here -->
+        </div>
+    </div>
+
+    <footer>
+        <p>Powered by <a href="https://github.com/" target="_blank">GitHub</a></p>
+    </footer>
+
+</body>
+</html>
